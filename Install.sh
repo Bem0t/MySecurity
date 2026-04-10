@@ -8,8 +8,7 @@ read -p "Выберите вариант установки: " var
 case "$var" in
 	1) 
 		echo "Установка\n" 
-		sudo su -c "bash <(wget -qO- x-ui-pro.sh https://raw.githubusercontent.com/Bem0t/MySecurity/refs/heads/main/x-ui-pro.sh)"
-		bash x-ui-pro.sh -install yes -panel 1 -ONLY_CF_IP_ALLOW no
+		bash <(wget -qO- https://raw.githubusercontent.com/Bem0t/MySecurity/refs/heads/main/x-ui-pro.sh) -install yes -panel 1 -ONLY_CF_IP_ALLOW no
 		;;
 	2) 
 		echo "Удаление\n" 
